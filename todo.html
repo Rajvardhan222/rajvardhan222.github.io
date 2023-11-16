@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do app</title>
+</head>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 720px;
+        font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+    }
+    .main{
+        border: 0px solid ;
+        border-radius: 10px;
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+    .header{
+        height: 100px;
+        width: 300px;
+        background-color: rgb(153, 81, 61);
+        color: white;
+        border-radius: 10px 10px 0px 0px;
+        display: flex;
+       justify-content: center;
+        align-items: center;
+    }
+    #textfield{
+        height: 30px;
+        width: 250px;
+        border-radius: 7px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: gray;
+        margin-top: 50px;
+        
+        
+   
+    }
+    #textfield::placeholder {
+    font-size: 14px;
+    color: gray; 
+}
+    .btn{
+        height: 50px;
+        width: 250px;
+        background-color:rgb(153, 81, 61);
+        color: white;
+        border: 0px solid black;
+        border-radius: 5px;
+        margin: 15px;
+    }
+    .append{
+        display: flex;
+        justify-content: left;
+        justify-items: left;
+    }
+ 
+</style>
+<body>
+    <div class="main">
+        <div class="header"><h1>To-Do List</h1></div>
+        <form action="">
+            <input type="text" name="" placeholder="Add a new task" id="textfield">
+        </form>
+        <div class="append"></div>
+        <button class="btn">Add Task</button>
+    </div>
+</body>
+<script>
+    let task = document.querySelector('#textfield')
+    let button = document.querySelector('button')
+    button.addEventListener('click',function () {
+        let taskText = task.value;
+        let newBox = document.createElement('p')
+        let btn = document.createElement('button')
+        newBox.innerText = taskText;
+        btn.innerText = 'Delete'
+        newBox.setAttribute('class','ptask');
+        btn.setAttribute('class','buttons');
+
+
+        let appending = document.querySelector('.append')
+        appending.appendChild(newBox);
+        appending.appendChild(btn);
+
+
+    })
+</script>
+</html>
