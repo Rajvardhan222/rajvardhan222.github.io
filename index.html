@@ -13,12 +13,13 @@
         justify-content: center;
         height: 720px;
         font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
+        background-image: radial-gradient(circle, rgb(242, 136, 43),rgb(180, 180, 24));
     }
     .main{
         border: 0px solid ;
         border-radius: 10px;
         box-shadow: 0 6px 6px rgba(0, 0, 0, 0.1);
+        
         min-width: 300px;
         display: flex;
         flex-direction: column;
@@ -44,7 +45,7 @@
         border-width: 2px;
         border-color: gray;
         margin-top: 50px;
-        
+        outline: none;
         
    
     }
@@ -61,11 +62,61 @@
         border-radius: 5px;
         margin: 15px;
     }
-    .append{
-        display: flex;
-        justify-content: left;
-        justify-items: left;
+    ul li{
+        list-style: none;
+        font-size: 17px;
+        margin-right: 200px;
+        padding: 10px;
+        position: relative;
+
+
     }
+    li::before{
+        content: "";
+        position: absolute;
+        background-image: url(unchecked.png);
+        height: 25px;
+        width: 25px;
+        background-size: cover;
+        background-position: center;
+        left: -20px;
+
+      
+       
+       border-radius: 50%;
+    }
+    ul li.checked{
+        color: rgb(87, 85, 83);
+        text-decoration: line-through;
+    }
+    ul li.checked::before{
+        content: "";
+        position: absolute;
+        background-image: url(checked.png);
+        height: 25px;
+        width: 25px;
+        background-size: cover;
+        background-position: center;
+        left: -20px;
+    }
+    span{
+        position: absolute;
+        left: 230px;
+        top: 5px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 22px;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        color: #555;
+
+
+    }
+   span:hover{
+    background-color: rgb(153, 81, 61);
+    color: white;
+   }
  
 </style>
 <body>
@@ -74,28 +125,36 @@
         <form action="">
             <input type="text" name="" placeholder="Add a new task" id="textfield">
         </form>
-        <div class="append"></div>
         <button class="btn">Add Task</button>
+        <div class="append">
+            <ul id="task-list">
+                <!-- <li class="checked">Task 1</li>
+                <!-- <li>Task 2</li> -->
+                <!-- <li>Task 3</li>  -->
+            </ul>
+        </div>
     </div>
 </body>
 <script>
     let task = document.querySelector('#textfield')
+    let taskList = document.querySelector('#task-list')
     let button = document.querySelector('button')
     button.addEventListener('click',function () {
-        let taskText = task.value;
-        let newBox = document.createElement('p')
-        let btn = document.createElement('button')
-        newBox.innerText = taskText;
-        btn.innerText = 'Delete'
-        newBox.setAttribute('class','ptask');
-        btn.setAttribute('class','buttons');
+        let taskitem = document.createElement('li')
+        taskitem.innerHTML = task.value;
+        taskList.appendChild(taskitem);
+        let span = document.createElement('span')
+        span.innerHTML = '\u00d7'
+        taskitem.appendChild(span)
+})
+ taskList.addEventListener('click',function (e) {
+    if(e.target.tagName ==="LI"){
+        e.target.classList.toggle('checked')
 
-
-        let appending = document.querySelector('.append')
-        appending.appendChild(newBox);
-        appending.appendChild(btn);
-
-
-    })
+    }
+    else if(e.target.tagName ==="SPAN"){
+        e.target.parentElement.remove()
+    }
+ })
 </script>
 </html>
