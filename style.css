@@ -592,7 +592,7 @@ button.white{
         
     }
 }
-@media (max-width:353px) {
+@media (max-width:383px) {
     .feature .fe-box {
         width: 113px;
     }
