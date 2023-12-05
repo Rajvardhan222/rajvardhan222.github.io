@@ -592,6 +592,32 @@ button.white{
         
     }
 }
+@media (max-width:353px) {
+    .feature .fe-box {
+        width: 113px;
+    }
+    .hero {
+       
+        width: 71.8vw;
+       
+    }
+    .banner {
+        height: 40vh;
+        width: 89%;
+    }
+    .sm-banner .banner-box {
+        
+        background-position:right 30%;
+        margin-bottom: 20px;
+    }
+    .bannerc {
+       justify-content: space-around;
+    }
+    .down3banner {
+        height: 31%;
+       
+    }
+}
 
 
 
