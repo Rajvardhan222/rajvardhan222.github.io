@@ -709,6 +709,11 @@ li::marker {
         top: -8px;
         width: 200px;
     }
+    .details {
+       
+        height: 20%;
+        border-bottom: 7px solid var(--purple);
+    }
     .nav-bar1 {
         align-items: flex-start;
         position: relative;
