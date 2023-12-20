@@ -70,3 +70,15 @@ closeservice3.addEventListener('click',()=>{
         knowmore3.style.display = 'none';
         }
 })
+
+// mobile nav closing
+let closenav = document.querySelector('.close-nav')
+let mobileNav = document.querySelector('.nav-mobile')
+closenav.addEventListener('click',()=>{
+    mobileNav.style.top = '-350px'
+    mobileNav.style.display = "none"
+})
+bar.addEventListener('click',()=>{
+    mobileNav.style.display = "block"
+    mobileNav.style.top = '0px'
+})
