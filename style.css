@@ -321,7 +321,7 @@ textarea{
     width: 200px;
     height: 250px;
     text-align: center;
-    box-shadow: 0 12px 24px var(--black);
+    box-shadow: 0 1px 18px var(--black);
     margin-top: 38px;
 }
 .service-card .card .know{
