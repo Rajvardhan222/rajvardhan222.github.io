@@ -72,6 +72,18 @@ box-shadow: 1px 5px 20px 0px rgba(209,178,255,1);
    
    
 }
+.sun{
+    margin-right: 30px;
+    font-weight: 900;
+    font-size: larger;
+    color: var(--white);
+}
+.sunBlack{
+    transition: all ease 0.5s;
+    margin-right: 30px;
+    font-size: 25px;
+    color: var(--black);
+}
 .navNotScrolled{
     background-image: linear-gradient(to right,var(--purple) 32.4%,var(--white) 0%);
     transition: background-image ease 0.5s;
@@ -746,7 +758,7 @@ li::marker {
         top: 22px;
         right: 40px;
         font-size: 25px;
-       
+        color: var(--black);
         
     }
     .nav-mobile ul {
@@ -761,8 +773,11 @@ li::marker {
     }
     .nav-mobile ul li{
         margin: 30px;
+        color: var(--black);
+
     }
     .nav-mobile ul li .nav-btn{
+       
         width: 120px;
         margin-top: 0px;
         height: 55px;
