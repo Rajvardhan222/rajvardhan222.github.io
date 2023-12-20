@@ -56,6 +56,7 @@ body{
 box-shadow: 1px 5px 20px 0px rgba(209,178,255,1);
 
 }
+
 .nav-bar{
     z-index: 200;
     position:fixed;
@@ -100,6 +101,9 @@ box-shadow: 1px 5px 20px 0px rgba(209,178,255,1);
 .nav-logo{
     margin-left: 10%;
 
+}
+.nav1 a p{
+    color: var(--white);
 }
 .logoname{
     transition: all ease 0.5s;
@@ -186,11 +190,21 @@ box-shadow: 1px 5px 20px 0px rgba(209,178,255,1);
     
    
 }
+.moon1{
+    display: inline;
+    margin-right: 80px;
+    font-size: 25px;
+
+}
 footer{
     height: 30vh;
     width: 100vw;
     background-color: var(--purple);
     margin-top: 100px;
+}
+.servics .hh{
+    color: var(--black);
+ 
 }
 .soc{
     width:15%;
@@ -221,6 +235,11 @@ font-size: x-large;
     position: relative;
     top: 100px;
     width: 200px;
+}
+.hero2 h2 {
+	margin: auto;
+	width: 208px;
+	margin-top: 135px;
 }
 /* contact section */
 .main p{
@@ -329,6 +348,9 @@ textarea{
     width: 165px;
   margin: 17px;
 }
+.card h3,p{
+    color: var(--black);
+}
 .moon{
     font-size:20px;
    
@@ -340,8 +362,11 @@ textarea{
     color:var(--purple);
     font-weight: 700;
 }
-.moon1,.bar{
+.bar{
     display: none;
+}
+.moon1{
+    display: inline;
 }
 .knowmore{
    transition: all ease 0.5s;
@@ -374,6 +399,10 @@ li::marker {
     top: 301px;
     font-weight: 700;
 }
+.name h3 {
+	margin-top: 60px;
+    color: var(--black);
+}
 
 .details{
     margin-top: 50px;
@@ -384,6 +413,9 @@ li::marker {
   margin-top: 15%;
   background-color: var(--white);
   padding: 100px 60px;
+}
+.social .icon-color{
+    color :var(--black);
 }
 /* media query1 */
 @media screen and (min-width:812px) and (max-width:995px) {
@@ -454,7 +486,7 @@ li::marker {
        
     }
     .service-card .card {
-       
+       color: var(--white);
         box-shadow: 0 12px 24px var(--black);
        
         
@@ -781,6 +813,9 @@ li::marker {
         width: 120px;
         margin-top: 0px;
         height: 55px;
+    }
+    .moon1{
+        display: inline;
     }
     .sun{
         margin-right: 30px;

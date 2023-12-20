@@ -4,6 +4,7 @@ let btn2 = document.querySelector('.btn2')
 let btn3 = document.querySelector('.btn3')
 let bar = document.querySelector('.bar')
 let moon = document.querySelector('.moon1')
+
 let myname = document.querySelector('.logoname')
 let closeservice1 = document.querySelector('.close1')
 let closeservice2 = document.querySelector('.close2')

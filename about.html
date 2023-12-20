@@ -11,19 +11,33 @@
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Dosis:wght@500&family=Mukta:wght@300;800&family=Noto+Sans:wght@900&family=Poppins:wght@100;200;300;700&family=Roboto:wght@300&family=Syne:wght@400;500;600&family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="hero2">
-        <div class="nav-bar">
-            <div class="nav-logo  font-underline">
-                <a class="font-black font-underline" href="index.html">Rajvardhan</a> 
-            </div>
-            <div class="nav">
-                <a class="font-black font-underline"  href="index.html">Home</a> 
-                <a class="font-black font-underline"  href="about.html">About Me</a> 
-                <a class="font-black font-underline"  href="portfolio.html">Portfolio</a> 
-                <a class="font-black font-underline button"  href="Contact.html"><p>Contact Me</p></a>
-                <i class="ri-moon-line" ></i>
-            </div>
+    <div class="nav-mobile" style="display: none;">
+        <i class="ri-close-line close-nav"></i>
+        <ul class="mobile-nav">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Project</a></li>
+            <li><a class="button nav-btn">Connact Me</a></li>
+        </ul>
+    </div>
+    <div class="nav-bar navNotScrolled">
+        <div class="nav-logo  font-underline">
+            <a class="font-white font-underline logoname" href="index.html">Rajvardhan</a> 
         </div>
+        <div class="nav">
+            <a class="font-black font-underline"  href="index.html">Home</a> 
+            <a class="font-black font-underline"  href="about.html">About Me</a> 
+            <a class="font-black font-underline"  href="portfolio.html">Portfolio</a> 
+            <a class="font-black font-underline button"  href="Contact.html"><p>Contact Me</p></a>
+       
+        </div>
+        <div class="hamburger-bar">
+            <i class="ri-sun-fill sun" style="display: none;"></i>
+            <i class="ri-moon-line moon1" ></i>
+            <i class="ri-menu-3-line bar"></i>
+        </div>
+    </div>
+    <div class="hero2">
         <h2>My Personal Information</h2>
         <div class="bid-circle">
             <div class="inner-circle">
@@ -118,4 +132,5 @@
         <p class="font-white copy"><i class="ri-copyright-fill font-white"></i> All Right Reserved By Me</p>
     </footer>
 </body>
+<script src="about.js"></script>
 </html>
