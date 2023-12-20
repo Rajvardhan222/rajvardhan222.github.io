@@ -19,9 +19,13 @@ window.addEventListener("scroll",()=>{
         bar.classList.remove('bar')
         moon.classList.add('moonBlack')
         moon.classList.remove('moon')
+        sun.classList.add('sunBlack')
+        sun.classList.remove('sun')
 
     }
     else{
+        sun.classList.remove('sunBlack')
+        sun.classList.add('sun')
         moon.classList.remove('moonBlack')
         moon.classList.add('moon')
 
@@ -81,4 +85,17 @@ closenav.addEventListener('click',()=>{
 bar.addEventListener('click',()=>{
     mobileNav.style.display = "block"
     mobileNav.style.top = '0px'
+})
+let sun = document.querySelector('.sun')
+moon.addEventListener('click',()=>{
+    document.documentElement.style.setProperty('--white','black')
+    document.documentElement.style.setProperty('--black','white')
+    moon.style.display = "none"
+    sun.style.display = "inline"
+})
+sun.addEventListener('click',()=>{
+    document.documentElement.style.setProperty('--white','white')
+    document.documentElement.style.setProperty('--black','black')
+    moon.style.display = "inline"
+    sun.style.display = "none"
 })
