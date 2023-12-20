@@ -719,6 +719,46 @@ li::marker {
         position: relative;
         top: -44px;
     }
+    .nav-mobile{
+        
+        height: 50vh;
+        width: 100vw;
+        position: sticky;
+        z-index: 1000;
+        background-color: white;
+        top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 12px 24px hsla(0, 0%, 0%, 0.548);
+        transition: all 0.3s ease;
+    }
+    .nav-mobile .close-nav{
+        position: absolute;
+        top: 22px;
+        right: 40px;
+        font-size: 25px;
+       
+        
+    }
+    .nav-mobile ul {
+        list-style: none;
+        width: 200px;
+        margin-top: 65px;
+        text-align: center;
+        font-size: large;
+        position: relative;
+        top: 88px;
+        left: 55px;
+    }
+    .nav-mobile ul li{
+        margin: 30px;
+    }
+    .nav-mobile ul li .nav-btn{
+        width: 120px;
+        margin-top: 0px;
+        height: 55px;
+    }
 
 }
 @media screen and (max-height:700px){
