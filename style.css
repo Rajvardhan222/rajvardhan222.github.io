@@ -58,7 +58,7 @@ box-shadow: 1px 5px 20px 0px rgba(209,178,255,1);
 .nav-bar{
     z-index: 200;
     position:fixed;
-    top: 20px;
+    top: 0px;
     display: flex;
     justify-content: space-between;
     width: 100vw;
@@ -92,8 +92,8 @@ box-shadow: 1px 5px 20px 0px rgba(209,178,255,1);
     transition: all ease 0.5s;
 }
 .bid-circle{
-    height: 350px;
-    width: 350px;
+    height: 20em;
+    width: 20em;
     border: 15px solid var(--purple);
     border-radius: 79%;
     position: relative;
@@ -107,16 +107,16 @@ box-shadow: 1px 5px 20px 0px rgba(209,178,255,1);
   
 }
 .inner-circle{
-    height: 200px;
-    width: 200px;
+    height: 13em;
+    width: 13em;
     border: 19px solid var(--purple);
     border-radius: 79%;
     position: relative;
 
 }
 .inner-circle img{
-    height: 200px;
-    width: 200px;
+    height: 13em;
+    width: 13em;
     border-radius:79% ;
 }
 .name{
@@ -484,7 +484,7 @@ li::marker {
       /* background-color: var(--purple); */
      
     
-      z-index: 1;
+      z-index: 100;
    
      
     }
@@ -657,6 +657,62 @@ li::marker {
     }
     .moon1, .bar {
         display:inline;
+    }
+    .nav-logo {
+        margin-left: 0%;
+        width: 47vw;
+        margin: auto;
+    }
+    .nav-bar1 {
+        display: flex;
+        justify-content: space-between;
+        width: 80vw;
+        margin: 0 auto;
+        flex-direction: column;
+        height: 350px;
+        background-color: transparent;
+        padding: 15px;
+        align-items: center;
+    }
+    footer {
+        height: 60vh;
+        align-items: flex-start;
+       
+    }
+    .nav1 {
+       justify-content: space-between;
+       height: 140px;
+        flex-direction: column;
+       align-items: flex-start;
+    }
+    .nav-logo {
+        margin-left: 0%;
+        width: 45vw;
+        /* margin: auto; */
+    }
+    .nav-bar1 {
+      
+        align-items:flex-start;
+    }
+    .soc {
+        width: 59%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav1 {
+   
+        width: 40%;
+    }
+    .copy {
+        margin: auto;
+        position: relative;
+        top: -8px;
+        width: 200px;
+    }
+    .nav-bar1 {
+        align-items: flex-start;
+        position: relative;
+        top: -44px;
     }
 
 }
