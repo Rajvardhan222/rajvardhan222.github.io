@@ -660,3 +660,8 @@ li::marker {
     }
 
 }
+@media screen and (max-height:700px){
+    .hero {
+        height: 120vh;
+    }
+}
