@@ -58,7 +58,7 @@ box-shadow: 1px 5px 20px 0px rgba(209,178,255,1);
 .nav-bar{
     z-index: 200;
     position:fixed;
-    top: 10px;
+    top: 20px;
     display: flex;
     justify-content: space-between;
     width: 100vw;
