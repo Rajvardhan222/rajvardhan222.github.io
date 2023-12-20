@@ -1,0 +1,662 @@
+:root{
+    --white:#fff;
+    --black:black;
+    --purple:rgba(103,57,241,255);
+    --pink: rgb(243, 21, 125);
+}
+
+body{
+    padding: 0;margin: 0;
+    font-family: 'Syne', sans-serif;
+   
+}
+.hero{
+    height: 85vh;
+    position: relative;
+    width: 100vw;
+    background-image: linear-gradient(to right,var(--purple) 33%,var(--white) 0%);
+    border-bottom: 10px solid rgba(103,57,241,255) ;
+}
+.font-white{
+    color:var(--white);
+}
+.font-black{
+    color:var(--black);
+}
+.font-underline{
+    text-decoration: none;
+}
+.button{
+    height: 50%;
+    cursor: pointer;
+    width: 30%;
+    background-color:var(--purple);
+    color: var(--white);
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: ease 0.3s;
+}
+
+.nav{
+    display: flex;
+    margin-right: 8%;
+    justify-content: space-between;
+    width: 35vw;
+    align-items: center;
+}
+.nav a:hover{
+    color:var(--pink);
+}
+.button:hover{
+    -webkit-box-shadow: 1px 5px 20px 0px rgba(209,178,255,1);
+-moz-box-shadow: 1px 5px 20px 0px rgba(209,178,255,1);
+box-shadow: 1px 5px 20px 0px rgba(209,178,255,1);
+
+}
+.nav-bar{
+    z-index: 200;
+    position:sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    margin: 0 auto;
+    height: 50px;
+  
+    padding: 15px;
+    align-items: center;
+
+   
+   
+}
+.navNotScrolled{
+    background-image: linear-gradient(to right,var(--purple) 32.4%,var(--white) 0%);
+    transition: background-image ease 0.5s;
+}
+.navScrolled{
+    background-image: linear-gradient(to right,white 32.4%,white 0%);
+    transition: background-image ease 0.5s;
+}
+.boxShadow{
+    box-shadow: 0 12px 10px rgba(0, 0, 0, 0.1); 
+    transition: all ease 0.5s;
+}
+
+.nav-logo{
+    margin-left: 10%;
+
+}
+.logoname{
+    transition: all ease 0.5s;
+}
+.bid-circle{
+    height: 350px;
+    width: 350px;
+    border: 15px solid var(--purple);
+    border-radius: 79%;
+    position: relative;
+    left: 20%;
+    z-index: 100;
+    top: 15%;
+    background-color:var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.inner-circle{
+    height: 200px;
+    width: 200px;
+    border: 19px solid var(--purple);
+    border-radius: 79%;
+    position: relative;
+
+}
+.inner-circle img{
+    height: 200px;
+    width: 200px;
+    border-radius:79% ;
+}
+.name{
+    position: relative;
+    top: -209px;
+  left: 56%;
+    z-index: 30;
+}
+.cv{
+    height: 40px;
+    width: 150px;
+    margin-top: 60px;
+}
+.social{
+    position: absolute;
+    top: 300px;
+    right: 152px;
+    
+    display: flex;
+    flex-direction: column;
+}
+.social .icon-color{
+    color:var(--purple);
+    font-size: x-large;
+    margin-top: 15px;
+}
+
+/* About page */
+.hero2{
+    height: 95vh;
+    position: relative;
+    width: 100vw;
+}
+.hero2 h2{
+    margin: auto;
+    width: 208px;
+}
+.name h3{
+    margin-top: 60px;
+}
+.skill1 svg{
+    width: 30px;
+    height: 50px;
+    margin-right: 30px;
+   
+    transition: ease 0.3s;
+}
+.skill1 svg:hover{
+   margin-bottom: 15px;
+    
+   
+}
+footer{
+    height: 30vh;
+    width: 100vw;
+    background-color: var(--purple);
+    margin-top: 100px;
+}
+.soc{
+    width:15%;
+    display: flex;
+    justify-content: space-between;
+}
+.soc i{
+font-size: x-large;
+}
+.nav1{
+    display: flex;
+    justify-content: space-between;
+    width: 25vw;
+    align-items: center;
+}
+.nav-bar1{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 0 auto;
+    height: 50px;
+    background-color: transparent;
+    padding: 15px;
+    align-items: center;
+}
+.copy {
+    margin: auto;
+    position: relative;
+    top: 100px;
+    width: 200px;
+}
+/* contact section */
+.main p{
+    margin: auto;
+    width: 20%;
+    font-size: x-large;
+    font-weight: 600;
+
+}
+.main{
+    width: 100vw;
+}
+.letter{
+    width: 35vw;
+    margin: auto;
+    margin-top: 100px;
+}
+.nameemail{
+    display: flex;
+}
+.nameemail input{
+    border: none;
+    width: 90%;
+}
+.nameemail input{
+   outline: none;
+}
+.nameemail fieldset{
+    width: 45%;
+    border: 2px solid rgb(125, 125, 125);
+}
+.nameemail fieldset:focus-within{
+   
+    border-color: rgb(0, 0, 0);
+}
+#f1 textarea{
+    outline: none;
+    border: none;
+    height: 35vh;
+    width: 95%;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    resize: none;
+
+}
+#f1{
+    border: 2px solid rgb(125, 125, 125);
+    height: 40vh;
+}
+#f1:focus-within{
+    border: 3px solid rgb(0, 0, 0);
+}
+.b1{
+    margin: auto;
+   margin-top: 100px;
+    height: 50px;
+   
+   
+    font-size: larger;
+}
+
+textarea{
+    font-family: "Syne", sans-serif;
+    font-size: large;
+}
+.box{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom,var(--white) 2%,var(--purple) 98% );
+
+}
+/* Service page */
+.servics{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+   
+    
+}
+.servics .hh{
+    font-size:xx-large;
+    font-weight: 600;
+    margin: 0;
+}
+.service-card{
+    display:flex;
+    justify-content: space-around;
+}
+.service-card{
+    width:57vw;
+}
+.service-card .card{
+    padding: 35px;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    box-shadow: 0 12px 24px  hsla(255, 90%, 31%, 0.1);
+    margin-top: 38px;
+}
+.service-card .card .know{
+    height: 43px;
+    width: 165px;
+  margin: 17px;
+}
+.moon{
+    font-size:20px;
+   
+    color: black;
+}
+.code{
+    font-size: xx-large;
+    
+    color:var(--purple);
+    font-weight: 700;
+}
+.moon1,.bar{
+    display: none;
+}
+.knowmore{
+   transition: all ease 0.5s;
+    position: fixed;
+    z-index: 200;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    backdrop-filter: blur(24px);
+    background-color: rgba(167, 180, 220, 0.4);
+    /* border: 2px solid black;
+    background-color: aquamarine; */
+    height: 100vh;
+}
+.knowmore h3{
+    margin: auto;
+    position: relative;
+    top: 308px;
+}
+
+li::marker {
+    color:var(--purple); /* Change the color of the bullet points */
+    font-size: larger;
+}
+.close{
+    font-size: xx-large;
+    color: var(--purple);
+    position: relative;
+    left: 123px;
+    top: 301px;
+    font-weight: 700;
+}
+
+.details{
+    margin-top: 50px;
+  color: gray;
+  width: 14%;
+  margin: auto;
+   
+  margin-top: 15%;
+  background-color: white;
+  padding: 100px 60px;
+}
+/* media query1 */
+@media screen and (min-width:812px) and (max-width:995px) {
+   
+    .navNotScrolled{
+        background-image: linear-gradient(to right,var(--purple) 31.9%,var(--white) 0%);
+        transition: background-image ease 0.5s;
+    }
+    .nav {
+        
+        margin-right: 10%;
+        
+        width: 45vw;
+       
+    }
+    .bid-circle {
+       
+        left: 13%;
+        
+    }
+    .hero {
+        height: 45vh;
+      }
+      .name {
+        position: relative;
+        top: -209px;
+        left: 55%;
+        z-index: 30;
+        width: 40%;
+    }
+    .b1 {
+        margin: auto;
+        margin-top: 100px;
+        height: 60px;
+        font-size: larger;
+        padding: 2px;
+        width: 290px;
+    }
+    .soc {
+        width: 23%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .letter {
+        width: 60vw;
+        margin: auto;
+        margin-top: 100px;
+    }
+}
+@media screen and(min-width:584px) and (max-width:811px) {
+    .bid-circle {
+        height: 300px;
+        width: 300px;
+        left: 11%;
+    }
+    .navNotScrolled {
+        background-image: linear-gradient(to right,var(--purple) 31.8%,var(--white) 0%);
+        transition: background-image ease 0.5s;
+    }
+    .nav {
+        
+        width: 45vw;
+       margin-right: 10%;
+      
+    }
+    .hero {
+        height: 50vh;
+       
+    }
+    .service-card .card {
+       
+        box-shadow: 0 12px 24px hsla(255, 90%, 31%, 0.1);
+       
+        
+    }
+    .nav1 {
+        width: 36vw;
+     }
+     .social {
+        position: absolute;
+        top: 417px;
+        right: 43px;
+       flex-direction: row;
+        
+        justify-content: space-between;
+        width: 12vh;
+    }
+    .name {
+        left: 54%;
+        width: 45vw;
+    }
+       .letter {
+        width: 70vw;
+     }
+     footer {
+        height: 15vh;
+     
+    }
+    .copy {
+     
+        top: 17px;
+       
+    }
+    .soc {
+        width: 20%;
+      
+    }
+    .details {
+    
+        width: 28%;
+       
+    }
+}
+@media screen and (max-width:583px){
+    .nav-bar {
+      /* background-color: var(--purple); */
+     
+    
+      z-index: 1;
+   
+     
+    }
+    .font-underline {
+        color: white;
+        text-decoration: none;
+    }
+    .nav {
+        display: none;
+       
+    }
+    .hero{
+        height: 85vh;
+        position: relative;
+        width: 100vw;
+        background-image: linear-gradient(to bottom,var(--purple) 25%,var(--white) 0%);
+        border-bottom: 10px solid rgba(103,57,241,255) ;
+    }
+    .bid-circle {
+        height: 250px;
+        width: 250px;
+        left: 14%;
+       top: 10%;
+       border: 10px solid var(--purple);
+    }
+    .inner-circle img {
+        height: 160px;
+        width: 160px;
+        border-radius: 79%;
+       
+    }
+    .inner-circle {
+        height: 160px;
+        width: 160px;
+        border: 12px solid var(--purple);
+    }
+    .navNotScrolled {
+        background-image: linear-gradient(to bottom,var(--purple) 33%,var(--purple) 0%);
+       
+    }
+    .nav-logo {
+        margin-left: 0%;
+
+    }
+    .font-underline {
+        color: white;
+        text-decoration: none;
+        font-size: large;
+    }
+    .hamburger-bar{
+        margin-right: 40px;
+    }
+    .hamburger-bar .bar{
+        font-size: 25px;
+        color: var(--white);
+
+    }
+    .moon{
+        margin-right: 30px;
+        font-size: 25px;
+        color: var(--white);
+        transition: all ease 0.5s;
+    }
+    .navScrolled {
+        background-image: linear-gradient(to right,white 32.4%,white 0%);
+        transition: all ease 0.5s;
+        z-index: 200;
+    }
+    .font-black {
+        transition: all ease 0.5s;
+        color: var(--black);
+    }
+    .moonBlack{
+        transition: all ease 0.5s;
+        margin-right: 30px;
+        font-size: 25px;
+        color: var(--black);
+    }
+    .bar-black{
+        transition: all ease 0.5s;
+        font-size: 25px;
+        color: var(--black);
+    }
+    .name {
+        margin-top: 120px;
+
+       position:static;
+        z-index: 30;
+    }
+    .name h1{
+        font-size: larger;
+        margin: auto;
+        width: 68%;
+    }
+    .name h4{
+        margin: auto;
+      margin-top: 20px;
+        width: 35%;
+        color: rgb(76, 76, 76);
+    }
+    .social {
+        position: absolute;
+        top: 460px;
+        right: 152px;
+        display: flex;
+        flex-direction:row;
+        width: 100px;
+        justify-content: space-between;
+       
+    }
+    .social .icon-color{
+        color :rgb(66, 66, 66);
+    }
+    .button {
+      position: relative;
+      left: 26%;
+      top: 20px;
+    }
+    .hero {
+        height: 75vh;
+        
+    }
+    .service-card {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        transition: all ease 0.5s;
+        
+    }
+    .service-card .card {
+        margin: auto;
+        margin-top: 50px;
+        transition: all ease 0.5s;
+    }
+    .service-card .card .know {
+        position: relative;
+    right: 31px;
+    top: 30px;
+    left: 5px;
+    transition: all ease 0.5s;
+    }
+    .button {
+      position: static;
+      margin: auto;
+      margin-top: 80px;
+      transition: all ease 0.5s;
+    }
+    .details {
+        
+        width: 55%;
+        height: 15%;
+        transition: all ease 0.5s;
+    }
+    .close {
+        
+        left: 123px;
+        top: 135px;
+        transition: all ease 0.5s;
+    }
+    .knowmore h3 {
+        width: 200px;
+        top: 104px;
+        transition: all ease 0.5s; 
+    }
+    .knowmore {
+        position: fixed;
+        top: 78px;
+        transition: all ease 0.5s;
+        
+    }
+    .moon1, .bar {
+        display:inline;
+    }
+
+}
