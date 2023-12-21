@@ -93,14 +93,14 @@ let sun = document.querySelector('.sun')
 moon.addEventListener('click',()=>{
     document.documentElement.style.setProperty('--white','black')
     document.documentElement.style.setProperty('--black','white')
-    document.documentElement.style.setProperty('--shadowBkack','#7685ff')
+    document.documentElement.style.setProperty('--shadowBkack','#7686ff48')
     document.documentElement.style.setProperty('--shadowWhite','#6c61ea91')
     moon.style.display = "none"
     sun.style.display = "inline"
 })
 sun.addEventListener('click',()=>{
     document.documentElement.style.setProperty('--shadowBkack','#6c61ea91')
-    document.documentElement.style.setProperty('--shadowWhite','#7685ff')
+    document.documentElement.style.setProperty('--shadowWhite','#7686ff48')
     document.documentElement.style.setProperty('--white','white')
     document.documentElement.style.setProperty('--black','black')
     moon.style.display = "inline"
