@@ -312,6 +312,35 @@ textarea{
     background-image: linear-gradient(to bottom,var(--white) 2%,var(--purple) 98% );
 
 }
+.hero2 h2{
+    color: var(--black);
+}
+.github{
+    width:150;
+    height:150;
+    font-size: 35px;
+    position: relative;
+    top: -10px;
+}
+@media screen and (max-width:500px){
+    .name p{
+        width: 90vw;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .name {
+      height: 600px;
+    }
+    footer {
+        height: 60vh;
+        align-items: flex-start;
+        margin-top: 248px;
+    }
+    .skill1{
+        width: 85vw;
+        margin: auto;
+    }
+}
 /* Service page */
 .servics{
     display: flex;
@@ -775,10 +804,10 @@ li::marker {
         
         height: 50vh;
         width: 100vw;
-        position: sticky;
+        position: fixed;
         z-index: 1000;
         background-color:var(--white);
-        top: 0px;
+         transform: translateY(-200%); 
         display: flex;
         justify-content: center;
         align-items: center;
@@ -796,12 +825,12 @@ li::marker {
     .nav-mobile ul {
         list-style: none;
         width: 200px;
-        margin-top: 65px;
+        margin-top: -31px;
         text-align: center;
         font-size: large;
         position: relative;
-        top: 88px;
-        left: 55px;
+        top: 36px;
+        left: -7px;
     }
     .nav-mobile ul li{
         margin: 30px;
@@ -821,7 +850,7 @@ li::marker {
         margin-right: 30px;
         font-weight: 900;
         font-size: larger;
-        color: var(--white);
+        color: var(--black);
     }
     .sunBlack{
         transition: all ease 0.5s;

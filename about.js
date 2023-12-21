@@ -2,14 +2,16 @@ let closenav = document.querySelector('.close-nav')
 let mobileNav = document.querySelector('.nav-mobile')
 let bar = document.querySelector('.bar')
 let moon = document.querySelector('.moon1')
+let github = document.querySelector('.github')
 let nav = document.querySelector('.nav-bar')
 closenav.addEventListener('click',()=>{
-    mobileNav.style.top = '-350px'
-    mobileNav.style.display = "none"
+    mobileNav.style.transform = "translateY(-200%)"; 
+    // mobileNav.style.display = "none"
 })
 bar.addEventListener('click',()=>{
-    mobileNav.style.display = "block"
-    mobileNav.style.top = '0px'
+    // mobileNav.style.display = "block"
+    // mobileNav.style.top = '0px'
+    mobileNav.style.transform = "translateY(-40%)"; 
 })
 let sun = document.querySelector('.sun')
 moon.addEventListener('click',()=>{
@@ -17,12 +19,14 @@ moon.addEventListener('click',()=>{
     document.documentElement.style.setProperty('--black','white')
     moon.style.display = "none"
     sun.style.display = "inline"
+    github.style.color = 'white'
 })
 sun.addEventListener('click',()=>{
     document.documentElement.style.setProperty('--white','white')
     document.documentElement.style.setProperty('--black','black')
     moon.style.display = "inline"
     sun.style.display = "none"
+    github.style.color = 'black'
 })
 
 
@@ -30,6 +34,7 @@ let myname = document.querySelector('.logoname')
 let closeservice1 = document.querySelector('.close1')
 let closeservice2 = document.querySelector('.close2')
 let closeservice3 = document.querySelector('.close3')
+
 window.addEventListener("scroll",()=>{
     if(scrollY > 0){
         nav.classList.remove('navNotScrolled');
@@ -46,6 +51,7 @@ window.addEventListener("scroll",()=>{
 
     }
     else{
+        sun.style.color = 'white'
         sun.classList.remove('sunBlack')
         sun.classList.add('sun')
         moon.classList.remove('moonBlack')

@@ -25,6 +25,7 @@ window.addEventListener("scroll",()=>{
 
     }
     else{
+        sun.style.color = 'white'
         sun.classList.remove('sunBlack')
         sun.classList.add('sun')
         moon.classList.remove('moonBlack')
@@ -80,12 +81,13 @@ closeservice3.addEventListener('click',()=>{
 let closenav = document.querySelector('.close-nav')
 let mobileNav = document.querySelector('.nav-mobile')
 closenav.addEventListener('click',()=>{
-    mobileNav.style.top = '-350px'
-    mobileNav.style.display = "none"
+    mobileNav.style.transform = "translateY(-200%)"; 
+    // mobileNav.style.display = "none"
 })
 bar.addEventListener('click',()=>{
-    mobileNav.style.display = "block"
-    mobileNav.style.top = '0px'
+    // mobileNav.style.display = "block"
+    // mobileNav.style.top = '0px'
+    mobileNav.style.transform = "translateY(0%)"; 
 })
 let sun = document.querySelector('.sun')
 moon.addEventListener('click',()=>{
