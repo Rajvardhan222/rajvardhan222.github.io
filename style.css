@@ -3,6 +3,8 @@
     --black:black;
     --purple:rgba(103,57,241,255);
     --pink: rgb(243, 21, 125);
+    --shadowBkack:#6c61ea91;
+    --shadowWhite:#7685ff;
 }
 
 body{
@@ -74,9 +76,9 @@ box-shadow: 1px 5px 20px 0px rgba(209,178,255,1);
    
 }
 .sun{
-    margin-right: 30px;
+    margin-right: 69px;
     font-weight: 900;
-    font-size: larger;
+    font-size: 25px;
     color: var(--white);
 }
 .sunBlack{
@@ -142,6 +144,7 @@ box-shadow: 1px 5px 20px 0px rgba(209,178,255,1);
     top: -209px;
   left: 56%;
     z-index: 30;
+    width: 100vw;
 }
 .cv{
     height: 40px;
@@ -384,16 +387,18 @@ textarea{
 .service-card{
     display:flex;
     justify-content: space-around;
+
 }
 .service-card{
-    width:57vw;
+    width:79vw;
 }
 .service-card .card{
     padding: 35px;
     width: 200px;
     height: 250px;
     text-align: center;
-    box-shadow: 0 1px 18px var(--black);
+    box-shadow: 0 1px 74px var(--shadowWhite);
+    transition: all 0.5s ease;
     margin-top: 38px;
 }
 .service-card .card .know{
@@ -540,7 +545,7 @@ li::marker {
     }
     .service-card .card {
        color: var(--white);
-        box-shadow: 0 12px 24px var(--black);
+        box-shadow: 0 12px 74px var(--shadowWhite);
        
         
     }
@@ -886,9 +891,9 @@ li::marker {
         display: inline;
     }
     .sun{
-        margin-right: 30px;
+        margin-right: 69px;
         font-weight: 900;
-        font-size: larger;
+        font-size: 25px;
         color: var(--black);
     }
     .sunBlack{
