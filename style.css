@@ -281,6 +281,10 @@ legend{
 .nameemail input{
    outline: none;
 }
+li a{
+    text-decoration: none;
+    color: var(--black);
+}
 .success{
     color: var(--black);
 }
