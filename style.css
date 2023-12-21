@@ -156,6 +156,9 @@ box-shadow: 1px 5px 20px 0px rgba(209,178,255,1);
     display: flex;
     flex-direction: column;
 }
+.nav-mobile{
+    display: none;
+}
 .social .icon-color{
     color: var(--white);
     font-size: x-large;
@@ -220,6 +223,17 @@ font-size: x-large;
     width: 25vw;
     align-items: center;
 }
+textarea{
+    background-color: var(--white);
+    color: var(--black);
+}
+input{
+    background-color: var(--white);
+    color: var(--black);
+}
+legend{
+    color: var(--black);
+}
 .nav-bar1{
     display: flex;
     justify-content: space-between;
@@ -267,13 +281,19 @@ font-size: x-large;
 .nameemail input{
    outline: none;
 }
+.success{
+    color: var(--black);
+}
 .nameemail fieldset{
     width: 45%;
     border: 2px solid rgb(125, 125, 125);
 }
 .nameemail fieldset:focus-within{
    
-    border-color: rgb(0, 0, 0);
+    border-color: var(--black);
+}
+.msgsuc{
+    color: var(--black);
 }
 #f1 textarea{
     outline: none;
@@ -821,6 +841,21 @@ li::marker {
         font-size: 25px;
         color: var(--black);
         
+    }
+    .nameemail {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        
+    }
+    .main {
+        width: 100vw;
+        margin-top: 100px;
+    }
+    .letter {
+        width: 90vw;
+        margin: auto;
+        margin-top: 100px;
     }
     .nav-mobile ul {
         list-style: none;
