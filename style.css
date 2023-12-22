@@ -79,7 +79,7 @@ box-shadow: 1px 5px 20px 0px rgba(209,178,255,1);
     margin-right: 69px;
     font-weight: 900;
     font-size: 25px;
-    color: var(--white);
+    color: var(--black);
 }
 .sunBlack{
     transition: all ease 0.5s;
@@ -203,19 +203,46 @@ box-shadow: 1px 5px 20px 0px rgba(209,178,255,1);
 
 }
 footer{
-    height: 30vh;
+    height: 100px;
     width: 100vw;
-    background-color: var(--purple);
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--purple);
+  justify-content: center;
+  align-items: center;
+   
 }
 .servics .hh{
     color: var(--black);
  
 }
-.soc{
-    width:15%;
+.content-footer{
+       display: flex; 
+       justify-content: space-between;
+       width: 90vw;
+}
+.content-footer h4{
+    color: var(--white);
+}
+.content-footer ul{
     display: flex;
-    justify-content: space-between;
+    width: 405px;
+  justify-content: space-between;
+}
+.content-footer ul li a{
+    color: var(--white);
+    font-size: larger;
+}
+.copy-right p {
+	color: var(--white);
+}
+.soc {
+	width: 15%;
+	display: flex;
+	justify-content: space-between;
+	height: -25px;
+	align-items: center;
 }
 .soc i{
 font-size: x-large;
@@ -269,6 +296,7 @@ legend{
 .main{
     width: 100vw;
 }
+
 .letter{
     width: 35vw;
     margin: auto;
@@ -358,11 +386,11 @@ textarea{
     .name {
       height: 600px;
     }
-    footer {
-        height: 60vh;
+    /* footer {
+        height: 100px;
         align-items: flex-start;
-        margin-top: 248px;
-    }
+        margin-top:100px;
+    } */
     .skill1{
         width: 85vw;
         margin: auto;
@@ -460,6 +488,7 @@ li::marker {
 .name h3 {
 	margin-top: 60px;
     color: var(--black);
+   
 }
 
 .details{
@@ -482,6 +511,7 @@ li::marker {
         background-image: linear-gradient(to right,var(--purple) 31.9%,var(--white) 0%);
         transition: background-image ease 0.5s;
     }
+
     .nav {
         
         margin-right: 10%;
@@ -510,7 +540,7 @@ li::marker {
         height: 60px;
         font-size: larger;
         padding: 2px;
-        width: 290px;
+        width: 98vw;
     }
     .soc {
         width: 23%;
@@ -568,10 +598,10 @@ li::marker {
        .letter {
         width: 70vw;
      }
-     footer {
+     /* footer {
         height: 15vh;
      
-    }
+    } */
     .copy {
      
         top: 17px;
@@ -587,7 +617,7 @@ li::marker {
        
     }
 }
-@media screen and (max-width:583px){
+@media screen and (max-width:783px){
     .nav-bar {
       /* background-color: var(--purple); */
      
@@ -595,6 +625,53 @@ li::marker {
       z-index: 100;
    
      
+    }
+    .b1 {
+        margin: auto;
+        margin-top: 100px;
+        height: 60px;
+        font-size: larger;
+        padding: 2px;
+        width: 90vw;
+    }
+    .hero2 {
+        height: 63vh;
+        position: relative;
+        width: 100vw;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+        height: 90%;
+        margin-top: 100px;
+    }
+    .content-footer{
+        
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 54%;
+    justify-content: space-between;
+    }
+    .copy-right p{
+        color: var(--white);
+    }
+    .content-footer h4{
+        font-weight: 700;
+        color: var(--white);
+    }
+    .content-footer ul{
+        display: flex;
+        text-align: center;
+        width: 315px;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .content-footer ul li a{
+        color: var(--white);
     }
     .font-underline {
         color: var(--var(--white));
@@ -642,6 +719,17 @@ li::marker {
         text-decoration: none;
         font-size: large;
     }
+    .skill1{
+        width: 300px;
+        margin: auto;
+    }
+    .name h3 {
+        margin: auto;
+        margin-top: 60px;
+        color: var(--black);
+        width: 150px;
+        margin-bottom: 50px;
+    }
     .hamburger-bar{
         margin-right: 40px;
     }
@@ -686,6 +774,16 @@ li::marker {
         font-size: larger;
         margin: auto;
         width: 68%;
+    }
+    .main p {
+        margin: auto;
+        width: 64%;
+        font-size: x-large;
+        font-weight: 600;
+    }
+    .nameemail fieldset {
+        width: 90%;
+        border: 2px solid rgb(125, 125, 125);
     }
     .name h4{
         margin: auto;
@@ -784,11 +882,11 @@ li::marker {
         padding: 15px;
         align-items: center;
     }
-    footer {
-        height: 60vh;
+    /* footer {
+        height: 250px;
         align-items: flex-start;
        
-    }
+    } */
     .nav1 {
        justify-content: space-between;
        height: 140px;
@@ -805,7 +903,7 @@ li::marker {
         align-items:flex-start;
     }
     .soc {
-        width: 59%;
+        width: 45%;
         display: flex;
         justify-content: space-between;
     }
@@ -891,8 +989,8 @@ li::marker {
         display: inline;
     }
     .sun{
-        margin-right: 69px;
-        font-weight: 900;
+        margin-right: 30px;
+        font-weight: 100;
         font-size: 25px;
         color: var(--black);
     }
