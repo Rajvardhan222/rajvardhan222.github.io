@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" integrity="sha512-ZH3KB6wI5ADHaLaez5ynrzxR6lAswuNfhlXdcdhxsvOUghvf02zU1dAsOC6JrBTWbkE1WNDNs5Dcfz493fDMhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Dosis:wght@500&family=Mukta:wght@300;800&family=Noto+Sans:wght@900&family=Poppins:wght@100;200;300;700&family=Roboto:wght@300&family=Syne:wght@400;500;600&family=VT323&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="nav-mobile" >
+        <i class="ri-close-line close-nav"></i>
+        <ul class="mobile-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Project</a></li>
+            <li><a href="contact.html" class="button nav-btn">Connact Me</a></li>
+        </ul>
+    </div>
+    <div class="nav-bar navNotScrolled">
+        <div class="nav-logo  font-underline">
+            <a class="font-white font-underline logoname" href="index.html">Rajvardhan</a> 
+        </div>
+        <div class="nav">
+            <a class="font-black font-underline"  href="index.html">Home</a> 
+            <a class="font-black font-underline"  href="about.html">About Me</a> 
+            <a class="font-black font-underline"  href="portfolio.html">Portfolio</a> 
+            <a class="font-black font-underline button"  href="contact.html"><p>Contact Me</p></a>
+       
+        </div>
+        <div class="hamburger-bar">
+            <i class="ri-sun-fill sun " style="display: none;"></i>
+            <i class="ri-moon-line moon moon1" ></i>
+            <i class="ri-menu-3-line bar"></i>
+        </div>
+    </div>
+
+    <div class="portfolio-grid-container">
+        <div class="portfolio">
+            <div class="img">
+                <i class="ri-arrow-right-circle-line"></i>
+            </div>
+            <h3>Creative Website</h3>
+            <p>Web Design</p>
+        </div>
+        <div class="portfolio">
+            <div class="img">
+                <i class="ri-arrow-right-circle-line"></i>
+            </div>
+            <h3>Creative Website</h3>
+            <p>Web Design</p>
+        </div>
+        <div class="portfolio">
+            <div class="img">
+                <i class="ri-arrow-right-circle-line"></i>
+            </div>
+            <h3>Creative Website</h3>
+            <p>Web Design</p>
+        </div>
+        <div class="portfolio">
+            <div class="img">
+                <i class="ri-arrow-right-circle-line"></i>
+            </div>
+            <h3>Creative Website</h3>
+            <p>Web Design</p>
+        </div>
+        <div class="portfolio">
+            <div class="img">
+                <i class="ri-arrow-right-circle-line"></i>
+            </div>
+            <h3>Creative Website</h3>
+            <p>Web Design</p>
+        </div>
+        <div class="portfolio">
+            <div class="img">
+                <i class="ri-arrow-right-circle-line"></i>
+            </div>
+            <h3>Creative Website</h3>
+            <p>Web Design</p>
+        </div>
+        
+    </div>
+</div>
+    <footer>
+        <div class="content-footer">
+            <h4>Rajvardhan</h4>
+            <ul>
+                <li><a href=".html">Home</a></li>
+                <li><a href=".html">About US</a></li>
+                <li><a href=".html">Portfolio</a></li>
+                <li><a href=".html">Contact</a></li>
+            </ul>
+            <div class="soc">
+                <i class="ri-facebook-circle-fill font-white"></i>
+                <i class="ri-instagram-fill font-white"></i>
+                <i class="ri-twitter-x-fill font-white"></i>
+                <i class="ri-linkedin-box-fill font-white"></i>
+            </div>
+           
+        <div class="copy-right">
+            <p><i class="ri-copyright-fill font-white"></i>  All RIghts Reserved By Me</p>
+        </div>
+    </footer>
+</body>
+<script>
+    let closenav = document.querySelector('.close-nav')
+let mobileNav = document.querySelector('.nav-mobile')
+let bar = document.querySelector('.bar')
+let moon = document.querySelector('.moon1')
+
+let nav = document.querySelector('.nav-bar')
+
+
+closenav.addEventListener('click',()=>{
+    mobileNav.style.transform = "translateY(-200%)"; 
+    // mobileNav.style.display = "none"
+})
+bar.addEventListener('click',()=>{
+    // mobileNav.style.display = "block"
+    // mobileNav.style.top = '0px'
+    mobileNav.style.transform = "translateY(-30%)"; 
+})
+let sun = document.querySelector('.sun')
+moon.addEventListener('click',()=>{
+    document.documentElement.style.setProperty('--white','black')
+    document.documentElement.style.setProperty('--black','white')
+    moon.style.display = "none"
+    sun.style.display = "inline"
+    github.style.color = 'white'
+})
+sun.addEventListener('click',()=>{
+    document.documentElement.style.setProperty('--white','white')
+    document.documentElement.style.setProperty('--black','black')
+    moon.style.display = "inline"
+    sun.style.display = "none"
+    github.style.color = 'black'
+})
+
+let myname = document.querySelector('.logoname')
+window.addEventListener("scroll",()=>{
+    if(scrollY > 0){
+        nav.classList.remove('navNotScrolled');
+        nav.classList.add('navScrolled');
+        myname.classList.remove('font-white');
+        myname.classList.add('font-black');
+        nav.classList.add('boxShadow')
+        bar.classList.add('bar-black')
+        bar.classList.remove('bar')
+        moon.classList.add('moonBlack')
+        moon.classList.remove('moon')
+        sun.classList.add('sunBlack')
+        sun.classList.remove('sun')
+
+    }
+    else{
+        sun.style.color = 'white'
+        sun.classList.remove('sunBlack')
+        sun.classList.add('sun')
+        moon.classList.remove('moonBlack')
+        moon.classList.add('moon')
+
+        bar.classList.remove('bar-black')
+        bar.classList.add('bar')
+
+        nav.classList.remove('navScrolled');
+        nav.classList.add('navNotScrolled');
+        
+        myname.classList.remove('font-black');
+        nav.classList.remove('boxShadow')
+        myname.classList.add('font-white')
+    }
+})
+
+</script>
+</html>

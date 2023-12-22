@@ -196,7 +196,7 @@ box-shadow: 1px 5px 20px 0px rgba(209,178,255,1);
     
    
 }
-.moon1{
+.moon1{ transition: ease 0.3s;
     display: inline;
     margin-right: 80px;
     font-size: 25px;
@@ -246,7 +246,12 @@ footer{
 }
 .soc i{
 font-size: x-large;
+transition: all 0.3s ease;
 }
+.soc i:hover{
+    transform:translateY(-10px) ;
+}
+
 .nav1{
     display: flex;
     justify-content: space-between;
@@ -504,6 +509,45 @@ li::marker {
 .social .icon-color{
     color :var(--black);
 }
+
+/* portfolio page start */
+
+
+    .portfolio-grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+      
+        margin-top: 150px;
+        margin: auto;
+        margin-top: 150px;
+        width: 70%; transition: all 0.3s ease;
+    }
+    
+    .portfolio-grid-container .portfolio h3 {
+        color: var(--black);
+    }
+.portfolio-grid-container .portfolio .img{
+    background-image: url('book1.avif');
+    height: 200px;
+    width: 300px;
+    filter: grayscale(100%); 
+    background-position: center;
+    background-size: cover;
+    transition: all 0.3s ease;
+}
+.portfolio-grid-container .portfolio .img:hover{
+    filter: grayscale(0%); 
+   transform: scale(1.2);
+     transition: all 0.3s ease;
+    
+}
+.portfolio-grid-container .portfolio .img i{
+    position: relative;
+    right: -264px;
+  top: 7px;
+    font-size: 25px;
+    color: var(--purple);
+}
 /* media query1 */
 @media screen and (min-width:812px) and (max-width:995px) {
    
@@ -624,6 +668,12 @@ li::marker {
     
       z-index: 100;
    
+     
+    }
+    .portfolio-grid-container {
+        width: 80%;
+        grid-template-columns: auto;
+      
      
     }
     .b1 {
