@@ -145,13 +145,19 @@ box-shadow: 1px 5px 20px 0px rgba(209,178,255,1);
     width: 13em;
     border-radius:79% ;
 }
+.social a {
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
 .name{
  
     position: relative;
     top: -209px;
   left: 56%;
     z-index: 30;
-    width: 100vw;
+    width: 26vw;
 }
 .cv{
     height: 40px;
