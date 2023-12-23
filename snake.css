@@ -47,20 +47,40 @@ body{
     cursor: pointer;
 }
 .controls{
-    display: flex;
+   
     width: 60vw;
     margin: auto;
     margin-top: 100px;
     justify-content: space-between;
 }
 .controls .up,.down,.right,.left{
-    width: 50%;
-    height: 200%;
+    width: 50px;
+    height: 50px;
     background-color: #293447;
     color: #B8C6DC;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: xx-large;
-    border-radius: 50%;
+   
+}
+.controls .up{
+    position: relative;
+    top:-47px;
+  right:0px;
+}
+.controls .down{
+    position: relative;
+    top:2px;
+    right:0px;
+}
+.controls .right{
+    position: relative;
+    top: -97px;
+    right: -50px;
+}
+.controls .left{
+    position: relative;
+    top: -148px;
+    right: 50px;
 }
