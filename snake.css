@@ -1,0 +1,66 @@
+body{
+ padding: 0;
+ margin: 0;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ width: 100vw;
+ background: #E3F2FD;
+}
+.playarea{
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+}
+.scroes{
+    font-family: 'VT323', monospace;
+    display: flex;
+    width: 350px;
+    justify-content: space-around;
+    background: #293447;
+    color: #B8C6DC;
+    margin-bottom: 20px;
+}
+.snakeGarden{
+    height: 100%;
+  width: 100%;
+  background: #212837;
+  display: grid;
+  grid-template-rows: repeat(20,20px);
+  grid-template-columns: repeat(20,20px);
+}
+.snake{
+    background: #60CBFF;
+   
+   
+}
+.food{
+    background: #FF003D;
+}
+.start{
+    height: 50px;
+    width: 90px;
+    background-color: #c4cfa3;
+    text-align: center ;
+    cursor: pointer;
+}
+.controls{
+    display: flex;
+    width: 60vw;
+    margin: auto;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+.controls .up,.down,.right,.left{
+    width: 50%;
+    height: 200%;
+    background-color: #293447;
+    color: #B8C6DC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    border-radius: 50%;
+}
