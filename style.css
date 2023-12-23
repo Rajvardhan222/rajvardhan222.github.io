@@ -676,7 +676,7 @@ li::marker {
      }
      .social {
         position: absolute;
-        top: 417px;
+        top: 481px;
         right: 43px;
        flex-direction: row;
         
@@ -1025,6 +1025,16 @@ li::marker {
         align-items: flex-start;
         position: relative;
         top: -44px;
+    }
+    .hero {
+        height: 98vh;
+    }
+    .name {
+       
+        top: -209px;
+        left: 56%;
+        z-index: 30;
+        width: 100vw;
     }
     .nav-mobile{
         
