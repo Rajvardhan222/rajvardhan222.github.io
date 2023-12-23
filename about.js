@@ -20,6 +20,7 @@ moon.addEventListener('click',()=>{
     moon.style.display = "none"
     sun.style.display = "inline"
     github.style.color = 'white'
+    localStorage.setItem("theme","Dark")
 })
 sun.addEventListener('click',()=>{
     document.documentElement.style.setProperty('--white','white')
@@ -35,6 +36,17 @@ let closeservice1 = document.querySelector('.close1')
 let closeservice2 = document.querySelector('.close2')
 let closeservice3 = document.querySelector('.close3')
 
+document.addEventListener('DOMContentLoaded',()=>{
+    let theme = localStorage.getItem('theme')
+    if (theme == "Dark") {
+    document.documentElement.style.setProperty('--white','black')
+    document.documentElement.style.setProperty('--black','white')
+    document.documentElement.style.setProperty('--shadowBkack','#7686ff48')
+    document.documentElement.style.setProperty('--shadowWhite','#6c61ea91')
+    moon.style.display = "none"
+    sun.style.display = "inline"
+    }
+})
 window.addEventListener("scroll",()=>{
     if(scrollY > 0){
         nav.classList.remove('navNotScrolled');

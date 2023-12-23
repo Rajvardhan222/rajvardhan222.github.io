@@ -97,6 +97,7 @@ moon.addEventListener('click',()=>{
     document.documentElement.style.setProperty('--shadowWhite','#6c61ea91')
     moon.style.display = "none"
     sun.style.display = "inline"
+    localStorage.setItem("theme","Dark")
 })
 sun.addEventListener('click',()=>{
     document.documentElement.style.setProperty('--shadowBkack','#6c61ea91')
@@ -104,5 +105,17 @@ sun.addEventListener('click',()=>{
     document.documentElement.style.setProperty('--white','white')
     document.documentElement.style.setProperty('--black','black')
     moon.style.display = "inline"
+    localStorage.setItem("theme","Light")
     sun.style.display = "none"
+})
+document.addEventListener('DOMContentLoaded',()=>{
+    let theme = localStorage.getItem('theme')
+    if (theme == "Dark") {
+    document.documentElement.style.setProperty('--white','black')
+    document.documentElement.style.setProperty('--black','white')
+    document.documentElement.style.setProperty('--shadowBkack','#7686ff48')
+    document.documentElement.style.setProperty('--shadowWhite','#6c61ea91')
+    moon.style.display = "none"
+    sun.style.display = "inline"
+    }
 })
