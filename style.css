@@ -442,7 +442,7 @@ textarea{
 .service-card .card{
     padding: 35px;
     width: 200px;
-    height: 250px;
+   
     text-align: center;
     box-shadow: 0 1px 74px var(--shadowWhite);
     transition: all 0.5s ease;
@@ -961,6 +961,9 @@ li::marker {
         top: 78px;
         transition: all ease 0.5s;
         
+    }
+    .c3{
+        height: 280px;
     }
     .moon1, .bar {
         display:inline;
